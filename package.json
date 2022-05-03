@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "ganache-cli": "ganache-cli -d -p 7545 --gasLimit=10000000",
-    "test": "DEPLOY_ALL=1 truffle test"
+    "test": "DEPLOY_ALL=1 truffle test",
+    "deploy": "rmdir /s build & yarn truffle mirgrate --network rinkeby"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "@0x/subproviders": "^6.6.2",
     "@metamask/eth-sig-util": "^4.0.0",
     "@openzeppelin/contracts": "4.4.0",
+    "dotenv": "^16.0.0",
     "eth-gas-reporter": "^0.2.17",
     "ethereum-waffle": "^3.0.0",
     "opensea-js": "^2.0.1",

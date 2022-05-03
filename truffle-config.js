@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const HDWalletProvider = require("truffle-hdwallet-provider");
 
 const MNEMONIC = process.env.MNEMONIC;
@@ -59,15 +61,13 @@ module.exports = {
       settings: {
         optimizer: {
           enabled: true,
-          runs: 20   // Optimize for how many times you intend to run the code
+          runs: 20, // Optimize for how many times you intend to run the code
         },
       },
     },
   },
-  plugins: [
-    'truffle-plugin-verify'
-  ],
+  plugins: ["truffle-plugin-verify"],
   api_keys: {
-    etherscan: 'ETHERSCAN_API_KEY_FOR_VERIFICATION'
-  }
+    etherscan: "YCRRD72M292C99GGCE5M85K96NMFDADW66",
+  },
 };

@@ -20,7 +20,7 @@ contract CreatureFactory is FactoryERC721, Ownable {
     address public proxyRegistryAddress;
     address public nftAddress;
     address public lootBoxNftAddress;
-    string public baseURI = "https://creatures-api.opensea.io/api/factory/";
+    string public baseURI = "https://bafybeiarxu6i2xfati77zkmajq5bz6yrupu4x75p5t6ukjbbmiyr3pxqd4.ipfs.nftstorage.link/metadata/";
 
     /*
      * Enforce the existence of only 100 OpenSea creatures.
