@@ -1,12 +1,13 @@
 {
-  "name": "opensea-creatures",
+  "name": "neon-smilez",
   "version": "1.0.0",
   "description": "OpenSea's smart contracts, including ERC721 templates, factories, and the storefront builder.",
   "main": "index.js",
   "scripts": {
     "ganache-cli": "ganache-cli -d -p 7545 --gasLimit=10000000",
     "test": "DEPLOY_ALL=1 truffle test",
-    "deploy": "rmdir /s build & yarn truffle mirgrate --network rinkeby"
+    "deploy": "rmdir /s build & yarn truffle mirgrate --network rinkeby",
+    "verify": "yarn truffle verify Creature@0xae49d0f93bf05a589de3c7c0033dfd386d7ac1c6 CreatureFactory@0x3ee79b6e60be84436B85261cFFed4C1260d82f6B --network rinkeby"
   },
   "repository": {
     "type": "git",

@@ -13,11 +13,12 @@ contract Creature is ERC721Tradable {
         ERC721Tradable("Creature", "OSC", _proxyRegistryAddress)
     {}
 
-    function baseTokenURI() override public pure returns (string memory) {
-        return "https://bafybeiarxu6i2xfati77zkmajq5bz6yrupu4x75p5t6ukjbbmiyr3pxqd4.ipfs.dweb.link/metadata/";
+    function baseTokenURI() public pure override returns (string memory) {
+        return
+            "https://bafybeiarxu6i2xfati77zkmajq5bz6yrupu4x75p5t6ukjbbmiyr3pxqd4.ipfs.dweb.link/metadata/";
     }
 
     function contractURI() public pure returns (string memory) {
-        return <contractUrlHere>;
+        return "JSON_METADATA";
     }
 }
