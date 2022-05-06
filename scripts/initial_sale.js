@@ -87,7 +87,7 @@ async function main() {
     } catch (e) {
       console.log(e);
     }
-    console.log("Sell Orders Created: " + (1 + i * NUM_FIXED_PRICE_AUCTIONS));
+    console.log("Sell Orders Created: " + ((1 + i) * NUM_FIXED_PRICE_AUCTIONS));
   }
 }
 
